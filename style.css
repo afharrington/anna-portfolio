@@ -1,0 +1,23 @@
+/*!
+Theme Name: Anna Harrington
+Theme URI: http://underscores.me/
+Author: Anna Harrington
+Author URI: https://afharrington.com
+Description: Portfolio Website
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: annaharrington
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Anna Harrington is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/html,body{font-size:62.5%;margin:0;height:100%}h1,h2,h3,h4,p{margin:0;padding:0;line-height:1.5}h1{font-size:6.0rem;font-family:"Josefin Sans",sans-serif}h2{font-size:4.8rem;font-family:"Josefin Sans",sans-serif}h3{font-size:3.6rem;font-family:"Josefin Sans",sans-serif}h4{font-size:2.4rem;font-family:"Josefin Sans",sans-serif}p{font-size:2.2rem;font-family:"Lato",sans-serif}a{text-decoration:none}@media screen and (max-width: 500px){h1{font-size:4.8rem}h2{font-size:3.6rem}h3{font-size:2.4rem}h4{font-size:1.8rem}p{font-size:1.8rem}}.section-header{width:30%;min-width:100px;display:inline-block;background-color:red;text-align:center;margin-top:5%;padding:5px;color:white}.section-content{margin:5%}.main-navigation{width:100%;position:absolute;top:0%;text-align:right}#primary-menu ul{margin:1rem;list-style:none}.hero-image{width:100%;height:100vh;background-position:center;background-repeat:no-repeat;background-size:cover;position:relative;display:flex;text-align:left}.hero-overlay{position:absolute;top:0%;width:100%;height:100vh;background:linear-gradient(to right, #1f777b 0%, transparent 100%)}@media screen and (max-width: 600px){.hero-overlay{background:#284d73;opacity:0.9}}.hero-title{color:white;margin-top:10%;padding-left:5%}.hero-text{color:white;padding:5%;width:60%;max-width:700px}.hero-text p{margin-top:30px}@media screen and (max-width: 900px){.hero-text{width:70%}}@media screen and (max-width: 600px){.hero-text{width:90%}}.about{background-color:#3D3D3D}.about .section-content{color:white}.about .subsection-left{padding-bottom:150px;text-align:left;display:grid;grid-template-areas:"header header" "text icon" "text icon";grid-template-columns:2fr 1fr}@media only screen and (max-width: 600px){.about .subsection-left{grid-template-areas:"icon" "header" "text";grid-template-columns:1fr}}.about .subsection-right{padding-bottom:150px;text-align:right;display:grid;grid-template-areas:"header header" "icon text" "icon text";grid-template-columns:1fr 2fr}@media only screen and (max-width: 600px){.about .subsection-right{grid-template-areas:"icon" "header" "text";grid-template-columns:1fr}}.about .subsection-header{border-bottom:2px solid white;grid-area:header}.about .subsection-text{display:inline-block;grid-area:text}.about .subsection-text p{margin-top:25px}.about .subsection-icon{text-align:center;display:inline-block;float:right;grid-area:icon}.about .subsection-icon img{margin:25px;height:150px;width:150px}@media only screen and (max-width: 600px){.about .subsection-icon{margin-left:0px}}
+
+/*# sourceMappingURL=maps/style.css.map */
