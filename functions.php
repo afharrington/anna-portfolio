@@ -123,21 +123,39 @@ function annaharrington_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_register_style( 'Animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' );
+	wp_enqueue_style('Animate');
+
+	wp_register_style( 'AOS', 'https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css' );
+	wp_enqueue_style('AOS');
+
+	wp_register_script( 'AOS', 'https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js', null, null, true );
+	wp_enqueue_script('AOS');
+
+	wp_enqueue_script('scripts', get_template_directory_uri() .'/assets/js/dist/app.min.js', array('jquery'), null, true);
+
 }
 add_action( 'wp_enqueue_scripts', 'annaharrington_scripts' );
 
+/**
+ * Include the file that registers custom post types
+ */
+
+require get_template_directory() . '/inc/custom.php';
 
 /**
  * Enqueue Google Fonts
  */
 function google_fonts() {
 	$query_args = array(
-		'family' => 'Josefin+Sans|Lato:400,400i,900',
+		'family' => 'Josefin+Sans|Lato:300,400,400i,900',
 		'subset' => 'latin,latin-ext'
 	);
 	wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
 }
 add_action('wp_enqueue_scripts', 'google_fonts');
+
 
 
 /**

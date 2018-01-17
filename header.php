@@ -37,15 +37,18 @@
 				</nav>
 
 				<div class="hero-overlay">
-					<h1 class="hero-title">Anna Harrington</h1>
+					<div class="hero-title">
+						<h1>Anna Harrington</h1>
+					</div>
 					<div class="hero-text">
 						<h3>I'm a freelance web developer based in New York. I create fresh, modern sites designed with the user in mind.</h3>
 						<p>I’m available for hire and am open to new partnerships with agencies, designers, and content experts.</p>
-						<p>Contact me if you’d like to work together.</p>
+						<div>
+							<p>Contact me if you’d like to work together:<br/>
+							<span class="hero-email">hi@afharrington.com</span></p>
+						</div>
 					</div>
 				</div>
-
-
 
 			</div>
 
