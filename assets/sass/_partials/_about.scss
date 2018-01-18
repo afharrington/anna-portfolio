@@ -1,15 +1,15 @@
-.about {
+#about {
   background-color: $about-background-color;
 
   .section-header {
     background-color: $about-accent-color;
+    -webkit-clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
   }
 
   .section-content {
     color: white;
-
     @media only screen and (min-width: 1000px) {
-      margin-right: 20%;
     }
   }
 
@@ -22,6 +22,10 @@
                           "text icon";
     grid-template-columns: 2fr 1fr;
 
+    .subsection-underline-right {
+      display: none;
+    }
+
     @media only screen and (max-width: 600px) {
       grid-template-areas: "icon"
                            "header"
@@ -29,6 +33,20 @@
       grid-template-columns: 1fr;
       padding-bottom: 75px;
     }
+
+    @media only screen and (max-width: 500px) {
+      .subsection-underline-right {
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+      }
+
+      .subsection-underline-left {
+        display: none;
+      }
+    }
+
+
   }
 
   .subsection-right {
@@ -45,19 +63,36 @@
                            "header"
                            "text";
       grid-template-columns: 1fr;
+      text-align: left;
+    }
+
+    @media only screen and (max-width: 500px) {
+      .subsection-underline-right {
+
+        width: 80%;
+        margin-left: 10%;
+      }
+
     }
   }
 
   .subsection-header {
     grid-area: header;
     padding-bottom: 10px;
+
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+    }
   }
 
-  .subsection-underline {
+  .subsection-underline-left, .subsection-underline-right {
     background-color: $yellow;
     width: 100%;
     height: 3px;
+    margin-top: 10px;
   }
+
+  .subsection-underline-right
 
   .subsection-text {
     display: inline-block;
@@ -78,6 +113,10 @@
       margin: 25px;
       height: 150px;
       width: 150px;
+
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 25px;
+      }
     }
 
     @media only screen and (max-width: 600px) {

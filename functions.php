@@ -124,6 +124,9 @@ function annaharrington_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
+	wp_register_style( 'FontAwesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+	wp_enqueue_style('FontAwesome');
+
 	wp_register_style( 'Animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' );
 	wp_enqueue_style('Animate');
 
@@ -149,7 +152,7 @@ require get_template_directory() . '/inc/custom.php';
  */
 function google_fonts() {
 	$query_args = array(
-		'family' => 'Josefin+Sans|Lato:300,400,400i,900',
+		'family' => 'Josefin+Sans|Lato:300,400,400i,900|Poppins:400,700',
 		'subset' => 'latin,latin-ext'
 	);
 	wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );

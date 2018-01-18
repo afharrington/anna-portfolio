@@ -8,7 +8,7 @@
 
 ?>
 
-<section class="work">
+<section id="work">
 
   <div class="section-header" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="600">
     <h4>SELECTED WORK</h4>

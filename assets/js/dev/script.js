@@ -6,6 +6,6 @@
 //   }
 // })
 
-jQuery(".animated").waypoint(function() {
-  jQuery(this.element).addClass("pulse");
-}, {offset: '50%'});
+jQuery(".element").waypoint(function() {
+  jQuery(this.element).addClass("zoom-animation");
+}, {offset: '0%'});

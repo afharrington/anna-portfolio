@@ -8,7 +8,7 @@
 
 ?>
 
-<section class="about">
+<section id="about">
   <div class="section-header" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="500">
     <h4>ABOUT</h4>
   </div>
@@ -16,7 +16,8 @@
     <div class="subsection-left">
       <div class="subsection-header">
         <h3><?php the_field('subsection_one_heading'); ?></h3>
-        <div class="subsection-underline" data-aos="fade-left"></div>
+        <div class="subsection-underline-left" data-aos="fade-left"></div>
+        <div class="subsection-underline-right" data-aos="fade-right"></div>
       </div>
 
       <div class="subsection-text">
@@ -30,7 +31,7 @@
     <div class="subsection-right">
       <div class="subsection-header">
         <h3><?php the_field('subsection_two_heading'); ?></h3>
-        <div class="subsection-underline" data-aos="fade-right"></div>
+        <div class="subsection-underline-right" data-aos="fade-right"></div>
       </div>
 
       <div class="subsection-text">
@@ -44,7 +45,8 @@
     <div class="subsection-left">
       <div class="subsection-header">
         <h3><?php the_field('subsection_three_heading'); ?></h3>
-        <div class="subsection-underline" data-aos="fade-left"></div>
+        <div class="subsection-underline-left" data-aos="fade-left"></div>
+        <div class="subsection-underline-right" data-aos="fade-right"></div>
       </div>
 
       <div class="subsection-text">
