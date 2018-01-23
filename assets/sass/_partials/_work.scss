@@ -12,30 +12,43 @@
     color: $dark-gray;
   }
 
+  .portfolio-item {
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-areas: "title description"
+                          "image image";
+    grid-template-columns: 1fr 2fr;
+
+    @media screen and (max-width: 500px) {
+      grid-template-areas: "title"
+                            "description"
+                            "image";
+      grid-template-columns: 1fr;
+      margin-bottom: 100px;
+    }
+  }
+
   .portfolio-item-title {
-    display: inline-block;
-    width: 40%;
+    grid-area: title;
+    margin-right: 20px;
   }
 
   .portfolio-item-description {
-    display: inline-block;
-    width: 60%;
-    float: right;
+    grid-area: description;
+
+    @media screen and (max-width: 500px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   .portfolio-item-image {
-    width: 100%;
+    grid-area: image;
     text-align: center;
-    margin-top: 50px;
 
     img {
-      @media screen and (max-width: 850px) {
-        width: 100%;
-      }
-
+      width: 80%;
     }
-
-
   }
 
 }

@@ -9,6 +9,20 @@
 
 get_header(); ?>
 
+<?php
+
+
+function redirect_post() {
+  $queried_post_type = get_query_var('post_type');
+  if ( is_single() && 'sample_post_type' ==  $queried_post_type ) {
+    wp_redirect( home_url(), 301 );
+    exit;
+  }
+}
+
+add_action( 'template_redirect', 'redirect_post' );
+?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -17,12 +31,6 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/content', get_post_type() );
 
-			the_post_navigation();
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
 
 		endwhile; // End of the loop.
 		?>

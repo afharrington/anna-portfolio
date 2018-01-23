@@ -37,6 +37,7 @@
 #responsive-menu-button {
   background: rgba(255,255,255,0.5) !important;
   border-radius: 50px;
+  margin: 10px !important;
 }
 
 .responsive-menu-inner, .responsive-menu-inner::before, .responsive-menu-inner::after {
@@ -83,7 +84,7 @@
   }
 
   @media screen and (max-width: 750px) {
-    margin-top: 25px;
+    margin-top: 75px;
   }
 
   @media screen and (max-width: 600px) {
