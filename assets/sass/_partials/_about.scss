@@ -1,20 +1,51 @@
 #about {
   background-color: $about-background-color;
+  color: $white;
 
   .section-header {
-    background-color: $about-accent-color;
-    -webkit-clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
-    clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    color: $about-text-color;
+    text-align: left;
+    padding: 5%;
+    padding-top: 10%;
+    transform: rotate(-5deg);
   }
 
   .section-content {
-    color: white;
-    @media only screen and (min-width: 1000px) {
+    padding: 5%;
+  }
+
+  .subsection-icon {
+    text-align: center;
+    display: inline-block;
+    float: right;
+    grid-area: icon;
+
+    img {
+      width: 250px;
+
+      @media only screen and (max-width: 900px) {
+        width: 200px;
+        margin-bottom: 25px;
+      }
+
+      @media only screen and (max-width: 700px) {
+        width: 150px;
+        margin-bottom: 25px;
+      }
     }
   }
 
+  .subsection-header {
+    text-transform: uppercase;
+    border-bottom: 5px solid $about-accent-color;
+    margin-bottom: 25px;
+  }
+
+  .subsection {
+    padding-bottom: 100px;
+  }
+
   .subsection-left {
-    padding-bottom: 200px;
     text-align: left;
     display: grid;
     grid-template-areas: "header header"
@@ -31,7 +62,6 @@
                            "header"
                            "text";
       grid-template-columns: 1fr;
-      padding-bottom: 75px;
     }
 
     @media only screen and (max-width: 500px) {
@@ -45,12 +75,9 @@
         display: none;
       }
     }
-
-
   }
 
   .subsection-right {
-    padding-bottom: 150px;
     text-align: right;
     display: grid;
     grid-template-areas: "header header"
@@ -85,13 +112,11 @@
   }
 
   .subsection-underline-left, .subsection-underline-right {
-    background-color: $yellow;
+    background-color: red;
     width: 100%;
     height: 3px;
     margin-top: 10px;
   }
-
-  .subsection-underline-right
 
   .subsection-text {
     display: inline-block;
@@ -102,26 +127,4 @@
     }
   }
 
-  .subsection-icon {
-    text-align: center;
-    display: inline-block;
-    float: right;
-    grid-area: icon;
-
-    img {
-      margin: 25px;
-      height: 150px;
-      width: 150px;
-
-      @media only screen and (max-width: 600px) {
-        margin-bottom: 25px;
-        width: 100px;
-        height: 100px;
-      }
-    }
-
-    @media only screen and (max-width: 600px) {
-      margin-left: 0px;
-    }
-  }
 }

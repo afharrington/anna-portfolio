@@ -10,8 +10,8 @@
 
 <section id="work">
 
-  <div class="section-header" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="600">
-    <h4>SELECTED WORK</h4>
+  <div class="section-header">
+    <h2>WORK</h2>
   </div>
 
   <div class="section-content">
@@ -43,9 +43,15 @@
               <p><?php the_field('item_description'); ?></p>
             </div>
 
-            <div class="portfolio-item-image">
+            <div class="portfolio-item-video">
               <a href="<?php the_field('item_url'); ?>" target="_blank" rel="noopener noreferrer">
-                <img src="<?php the_field('item_image'); ?>"/>
+
+                <video autoplay loop>
+                   <source src="<?php the_field('item_video'); ?>" type="video/mp4" >
+                </video>
+
+                <img src="<?php the_field('item_image'); ?>" />
+
               </a>
             </div>
 

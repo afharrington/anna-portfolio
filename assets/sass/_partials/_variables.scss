@@ -1,22 +1,26 @@
-
-$josefin: 'Josefin Sans', sans-serif;
 $lato: 'Lato', sans-serif;
-$poppins: 'Poppins', sans-serif;
+$rocksalt: 'Rock Salt', cursive;
+$opensanscondensed: 'Open Sans Condensed', sans-serif;
 
-$header-font: $poppins;
-$body-font: $lato;
+$title-font: $rocksalt;
+$header-font: $opensanscondensed;
+$body-font: $opensanscondensed;
 
+$white: #f9f7f5;
+$tomato: #fc3c4c;
+$crimson: #c72014;
+$burnt-orange: #e26c23;
+$orange: #F78D33;
+$seafoam: #a2dcc7;
+$khaki: #c9ab67;
 $dark-gray: #3D3D3D;
 
-$yellow: #FCD231;
-$cyan: #00BCD4;
-$coral: #fd5e60;
+$about-background-color: $orange;
+$about-text-color: $white;
+$about-accent-color: $burnt-orange;
 
-$about-background-color: $dark-gray;
-$about-accent-color: $cyan;
-
-$work-background-color: white;
-$work-accent-color: $cyan;
+$work-background-color: $white;
+$work-accent-color: $seafoam;
 
 $contact-background-color: $dark-gray;
 $contact-accent-color: pink;
