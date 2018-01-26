@@ -15,7 +15,9 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="footer-text">
+			<p>
 			<i class="fa fa-copyright" aria-hidden="true"></i> 2018 Created by Anna Harrington
+			</p>
 		</div>
 
 

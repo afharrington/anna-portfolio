@@ -33,6 +33,8 @@
   .portfolio-item-title {
     grid-area: title;
     margin-right: 20px;
+    color: darken($seafoam, 30%);
+
 
     @media screen and (max-width: 600px) {
       text-align: center;
@@ -54,13 +56,21 @@
     text-align: center;
 
     img {
-      width: 300px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      width: 80%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      transition: all 0.2s ease-in-out;
 
-      @media (min-width: 699px) {
-        display: none;
+      @media (max-width: 600px) {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
+    }
+
+    img:hover {
+      opacity: 0.5;
     }
 
     video {
@@ -79,5 +89,4 @@
       opacity: 0.5;
     }
   }
-
 }

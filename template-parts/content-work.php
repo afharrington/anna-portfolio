@@ -32,7 +32,7 @@
         <!-- the loop -->
         <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
-          <article class="portfolio-item">
+          <article class="portfolio-item" >
 
             <div class="portfolio-item-title">
               <h3><?php the_title(); ?></h3>
@@ -46,9 +46,11 @@
             <div class="portfolio-item-video">
               <a href="<?php the_field('item_url'); ?>" target="_blank" rel="noopener noreferrer">
 
+                <!--
                 <video autoplay loop>
-                   <source src="<?php the_field('item_video'); ?>" type="video/mp4" >
+                   <source data-src="<?php the_field('item_video'); ?>" type="video/mp4" >
                 </video>
+               -->
 
                 <img src="<?php the_field('item_image'); ?>" />
 
